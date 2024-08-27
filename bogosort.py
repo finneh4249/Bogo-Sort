@@ -1,10 +1,7 @@
 import random
 import time
 from pyfiglet import figlet_format
-from colorama import init, Fore
 from sys import argv
-
-init(autoreset=True)
 
 if len(argv) > 1:
     if argv[1] == "-h" or argv[1] == "--help":
@@ -37,7 +34,7 @@ class App():
         return data
     
     def run(self):
-        print(Fore.CYAN, figlet_format("BOGO SORT", font="slant"))
+        print(figlet_format("BOGO SORT", font="slant"))
         print("Unsorted:", data)
         start = time.time()
         sorted_data = self.bogo_sort(self.data)
