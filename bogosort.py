@@ -30,8 +30,9 @@ class App():
         while not self.is_sorted(data):
             comparison_counter += 1
             random.shuffle(data)
-        print("Number of comparisons:", comparison_counter)
+        print("Number of comparisons: {:,}".format(comparison_counter))
         return data
+
     
     def run(self):
         print(figlet_format("BOGO SORT", font="slant"))
