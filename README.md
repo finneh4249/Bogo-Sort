@@ -35,6 +35,14 @@ Bogosort repeatedly shuffles the list until it happens to be sorted. Its expecte
 runtime grows factorially with the number of elements, so larger inputs can be
 very slow.
 
+### Example (Windows)
+
+```
+./bogo.bat 3
+```
+
+This sorts a randomly generated list of 3 elements.
+
 ### Example (Linux & MacOS)
 
 ```
